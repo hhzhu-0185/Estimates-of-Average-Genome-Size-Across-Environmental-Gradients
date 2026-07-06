@@ -122,7 +122,7 @@ sig_links_upper <- data.frame(
 )
 
 sig_links_upper$p <- p.adjust(sig_links_upper$p, method = "fdr")
-sig_links_filtered <- subset(sig_links_upper, p < 0.05 & r > 0.61)
+sig_links_filtered <- subset(sig_links_upper, p < 0.05 & r > 0.6)
 
 
 g <- graph_from_data_frame(sig_links_filtered, directed=FALSE)
